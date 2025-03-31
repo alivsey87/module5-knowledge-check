@@ -13,7 +13,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">BRAND NAME</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -35,11 +36,22 @@
         </div>
     </nav>
 
+    <!-- Hero Image -->
+    <section id="home">
+        <div class="container-fluid m-0 p-0 d-flex justify-content-center align-items-center position-relative"
+             style="height: 100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100"
+                 style="background: url('Static/silhouette.jpg') no-repeat center center; background-size: cover; filter: grayscale(1.0) brightness(0.4); z-index: 0;">
+            </div>
+            <h1 class="text-center text-white position-relative" style="letter-spacing: 0.1rem; z-index: 1;">WELCOME</h1>
+        </div>
+    </section>
+
     <!-- Form -->
     <section id="contact">
         <div class="container mt-5 pt-5">
             <h2 class="text-center text-white mb-4">REGISTER</h2>
-            <form class="border border-4 p-4 shadow bg-dark was-validated" action="#">
+            <form class="border border-3 p-4 shadow bg-dark was-validated" action="#">
                 <div class="row">
                     <div class="col-md-6">
                         <label class="form-label text-white" for="fname">FIRST NAME:</label>
@@ -64,10 +76,9 @@
                     </div>
                 </div>
                 <label class="form-label text-white" for="password">PASSWORD:</label>
-                <input type="password" class="form-control rounded-0" id="password" placeholder="********"
-                    required>
-                    <div class="valid-feedback">Thank You!</div>
-                    <div class="invalid-feedback">Please enter password.</div>
+                <input type="password" class="form-control rounded-0" id="password" placeholder="********" required>
+                <div class="valid-feedback">Thank You!</div>
+                <div class="invalid-feedback">Please enter password.</div>
                 <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" id="check" required>
                     <label class="form-check-label" for="check">Check here to agree to our terms and conditions</label>
