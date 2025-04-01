@@ -16,7 +16,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">BRAND NAME</a>
+            <a class="navbar-brand text-white" href="#">OMEGA Solutions</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,59 +36,129 @@
         </div>
     </nav>
 
-    <!-- Hero Image -->
+    <!-- Hero section -->
     <section id="home">
-        <div class="container-fluid m-0 p-0 d-flex justify-content-center align-items-center position-relative"
-             style="height: 100vh;">
-            <div class="position-absolute top-0 start-0 w-100 h-100"
-                 style="background: url('Static/silhouette.jpg') no-repeat center center; background-size: cover; filter: grayscale(1.0) brightness(0.4); z-index: 0;">
+        <div class="container-fluid mt-0 p-0 position-relative" style="height: 100vh;">
+            <img src="Static/silhouette.jpg" alt="A guy in a beanie at his laptop"
+                class="img-fluid position-absolute top-0 start-0 w-100 h-100"
+                style="object-fit: cover; filter: grayscale(1.0) brightness(0.4); z-index: 0;">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <h1 class="text-center text-white" style="letter-spacing: 0.1rem; z-index: 1;">WELCOME</h1>
             </div>
-            <h1 class="text-center text-white position-relative" style="letter-spacing: 0.1rem; z-index: 1;">WELCOME</h1>
         </div>
     </section>
 
-    <!-- Form -->
-    <section id="contact">
-        <div class="container mt-5 pt-5">
-            <h2 class="text-center text-white mb-4">REGISTER</h2>
-            <form class="border border-3 p-4 shadow bg-dark was-validated" action="#">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label class="form-label text-white" for="fname">FIRST NAME:</label>
-                        <input type="text" class="form-control col-sm-4 rounded-0" id="fname" placeholder="John"
-                            required>
-                        <div class="valid-feedback">Thank You!</div>
-                        <div class="invalid-feedback">Please enter first name.</div>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label text-white" for="lname">LAST NAME:</label>
-                        <input type="text" class="form-control col-sm-4 rounded-0" id="lname" placeholder="Doe"
-                            required>
-                        <div class="valid-feedback">Thank You!</div>
-                        <div class="invalid-feedback">Please enter last name.</div>
-                    </div>
-                    <div class="col-md">
-                        <label class="form-label text-white" for="email">EMAIL:</label>
-                        <input type="email" class="form-control rounded-0" id="email" placeholder="example@mail.com"
-                            required>
-                        <div class="valid-feedback">Thank You!</div>
-                        <div class="invalid-feedback">Please enter email.</div>
-                    </div>
-                </div>
-                <label class="form-label text-white" for="password">PASSWORD:</label>
-                <input type="password" class="form-control rounded-0" id="password" placeholder="********" required>
-                <div class="valid-feedback">Thank You!</div>
-                <div class="invalid-feedback">Please enter password.</div>
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" id="check" required>
-                    <label class="form-check-label" for="check">Check here to agree to our terms and conditions</label>
-                    <div class="valid-feedback">Thank You!</div>
-                    <div class="invalid-feedback">Please agree to terms and conditions.</div>
-                </div>
-                <button class="btn btn-success w-100 rounded-0 shadow-sm">Submit</button>
-            </form>
+    <!-- Mini image "Robot helper" section -->
+    <section id="helper">
+        <div class="container-fluid mt-5 pt-5 d-flex justify-content-center align-items-center">
+            <div class="rounded-circle overflow-hidden mb-2" style="width: 200px; height: 200px;">
+                <img src="Static/robot.jpg" alt="the helpful robot assistant" class="img-fluid"
+                    style="object-fit: cover; object-position: -70px; width: 100%; height: 100%; filter: grayscale(1.0);">
+            </div>
+        </div>
+        <div class="container-fluid mt-3 text-center">
+            <h2 class="text-white">How can I help you?</h2>
+            <div class="row col-3 mx-auto mt-3">
+                <a href="#home"
+                    class="d-none d-md-block btn btn-outline-secondary text-decoration-none text-white text-center w-100 mb-3">
+                    Home
+                </a>
+                <a href="#register" class="btn btn-outline-secondary text-decoration-none text-white text-center w-100">
+                    Register
+                </a>
+            </div>
         </div>
     </section>
+
+    <!-- Users table section -->
+    <div class="container mt-5 pt-5">
+        <h2 class="text-center text-white">Registered Users</h2>
+        <p class="text-center">Our current users and employees</p>
+        <table class="table table-hover mt-4 shadow table-bordered border border-3 table-striped table-responsive">
+            <thead class="table-dark">
+                <tr>
+                    <th>Last</th>
+                    <th>First</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Brown</td>
+                    <td>Zach</td>
+                    <td>zbrown@omega.com</td>
+                </tr>
+                <tr>
+                    <td>Davis</td>
+                    <td>Ashley</td>
+                    <td>adavis@omega.com</td>
+                </tr>
+                <tr>
+                    <td>Devens</td>
+                    <td>Charles</td>
+                    <td>cdevens@omega.com</td>
+                </tr>
+                <tr>
+                    <td>Goodyear</td>
+                    <td>Ryan</td>
+                    <td>rgoodyear@omega.com</td>
+                </tr>
+                <tr>
+                    <td>Kelly</td>
+                    <td>Roger</td>
+                    <td>rkelly@omega.com</td>
+                </tr>
+                <tr>
+                    <td>Livingston</td>
+                    <td>Barbara</td>
+                    <td>blivingston@omega.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Form section -->
+        <section id="register">
+            <div class="container mt-5 pt-5">
+                <h2 class="text-center text-white mb-4">Register</h2>
+                <form class="border border-3 p-4 shadow bg-dark was-validated" action="#">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label text-white" for="fname">FIRST NAME:</label>
+                            <input type="text" class="form-control col-sm-4 rounded-0" id="fname" placeholder="John"
+                                required>
+                            <div class="valid-feedback">Thank You!</div>
+                            <div class="invalid-feedback">Please enter first name.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-white" for="lname">LAST NAME:</label>
+                            <input type="text" class="form-control col-sm-4 rounded-0" id="lname" placeholder="Smith"
+                                required>
+                            <div class="valid-feedback">Thank You!</div>
+                            <div class="invalid-feedback">Please enter last name.</div>
+                        </div>
+                        <div class="col-md">
+                            <label class="form-label text-white" for="email">EMAIL:</label>
+                            <input type="email" class="form-control rounded-0" id="email" placeholder="jsmith@omega.com"
+                                required>
+                            <div class="valid-feedback">Thank You!</div>
+                            <div class="invalid-feedback">Please enter email.</div>
+                        </div>
+                    </div>
+                    <label class="form-label text-white" for="password">PASSWORD:</label>
+                    <input type="password" class="form-control rounded-0" id="password" placeholder="********" required>
+                    <div class="valid-feedback">Thank You!</div>
+                    <div class="invalid-feedback">Please enter password.</div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="check" required>
+                        <label class="form-check-label" for="check">Check here to agree to our terms and
+                            conditions</label>
+                        <div class="valid-feedback">Thank You!</div>
+                        <div class="invalid-feedback">Please agree to terms and conditions.</div>
+                    </div>
+                    <button class="btn btn-success w-100 rounded-0 shadow-sm">Submit</button>
+                </form>
+            </div>
+        </section>
 
 </body>
 
